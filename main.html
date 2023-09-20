@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf‐8">
+  <title> Leela's Keyboard </title>
+  <!--SOURCE: https://www.codeguage.com/courses/js/cssom-colored-squares-exercise-->
+  <style> 
+    .square {
+    position: fixed;
+    opacity: 0.8;
+  }
+  </style>
+  
+</head>
+
+<body>
+  <h1>Leela's Keyboard!</h1>
+  <p>Press keys to play.</p>
+
+  <!--SOURCE: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio-->
+  <fieldset style="margin: 5px;">
+
+    <legend>Select a waveform:</legend>
+
+    <div>
+      <input type="radio" id="sine" name="wave" value="sine" checked />
+      <label for="sine">Sine</label>
+    </div>
+
+    <div>
+      <input type="radio" id="sawtooth" name="wave" value="sawtooth" />
+      <label for="sawtooth">Sawtooth</label>
+    </div>
+  </fieldset>
+
+  <fieldset style="margin: 5px;">
+    <legend>Select a color palette:</legend>
+
+    <div>
+      <input type="radio" id="random" name="color" value="random" checked />
+      <label for="random">Random</label>
+    </div>
+
+    <div>
+      <input type="radio" id="gray" name="color" value="gray" />
+      <label for="gray">Grayscale</label>
+    </div>
+
+    <div>
+      <input type="radio" id="pastel" name="color" value="pastel" />
+      <label for="pastel">Pastels</label>
+    </div>
+  </fieldset>
+
+  <button style="margin: 5px;">Clear</button>
+
+</body>
+<script src="main.js"> </script>
+
+
+
+</html>
